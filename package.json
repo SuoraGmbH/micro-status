@@ -11,13 +11,17 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "lint": "tslint -p .",
+    "lint:fix": "tslint -p . --fix"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
     "@types/node": "^10.10.1",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
+    "prettier": "^1.14.3",
+    "tslint-plugin-prettier": "^2.0.0",
     "typescript": "^3.0.3"
   }
 }
