@@ -16,8 +16,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Christian",
-      "postId": 1
+      "name": "Christian"
     }
   ]
 }
