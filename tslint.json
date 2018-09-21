@@ -2,7 +2,8 @@
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "rulesDirectory": ["tslint-plugin-prettier"],
   "rules": {
-    "prettier": true
+    "prettier": true,
+    "interface-name": false
   },
   "linterOptions": {
     "exclude": [
