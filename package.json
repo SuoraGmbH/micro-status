@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "json-server": "^0.14.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts-ts": "2.17.0"
@@ -13,7 +14,8 @@
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "lint": "tslint -p .",
-    "lint:fix": "tslint -p . --fix"
+    "lint:fix": "tslint -p . --fix",
+    "backend": "json-server --port 4712 --watch storage/database.json"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
