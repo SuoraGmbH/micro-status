@@ -12,7 +12,7 @@ export class TweetList extends React.Component<Props> {
     return (
       <div>
         {tweets.map(tweet => (
-          <TweetListItem tweet={tweet} />
+          <TweetListItem key={tweet.id} tweet={tweet} />
         ))}
       </div>
     );
