@@ -23,7 +23,7 @@ it('typing a value and submitting the form will result in a new tweet', () => {
     .simulate('change', { target: { value: 'Hello World!' } });
 
   // Ensure value is in the field
-  expect(wrapper).toMatchSnapshot();
+  expect(wrapper).toMatchSnapshot('field filled');
 
   wrapper.find('input[type="submit"]').simulate('submit');
 
@@ -31,4 +31,7 @@ it('typing a value and submitting the form will result in a new tweet', () => {
   const tweet: TweetWithoutId = addTweetCallback.mock.calls[0][0];
   expect(tweet.userId).toBe('muhdiekuh');
   expect(tweet.message).toBe('Hello World!');
+
+  // Ensure value is empty again
+  expect(wrapper).toMatchSnapshot('empty input');
 });
