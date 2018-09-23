@@ -3,4 +3,11 @@ import {
   FetchTweetFulfilledAction,
 } from './tweet/actions';
 
-export type Action = FetchTweetFulfilledAction | AddTweetFulfilledAction;
+interface InitAction {
+  type: '@@INIT';
+}
+
+export type Action =
+  | FetchTweetFulfilledAction
+  | AddTweetFulfilledAction
+  | InitAction;
