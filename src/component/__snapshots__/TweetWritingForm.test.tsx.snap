@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    name="text"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <input
+    type="submit"
+  />
+</form>
+`;
+
+exports[`typing a value and submitting the form will result in a new tweet 1`] = `
+<TweetWritingForm
+  addTweet={[MockFunction]}
+  userId="muhdiekuh"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      name="text"
+      onChange={[Function]}
+      type="text"
+      value="Hello World!"
+    />
+    <input
+      type="submit"
+    />
+  </form>
+</TweetWritingForm>
+`;
