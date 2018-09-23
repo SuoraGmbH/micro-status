@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders one item according to snapshot 1`] = `
+<div>
+  <TweetListItem
+    tweet={
+      Object {
+        "date": "2018-09-22T12:25:41.801Z",
+        "id": 1,
+        "message": "Hello World!",
+        "userId": "muhdiekuh",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`renders two items according to snapshot 1`] = `
+<div>
+  <TweetListItem
+    tweet={
+      Object {
+        "date": "2018-09-22T12:25:41.801Z",
+        "id": 1,
+        "message": "Hello World!",
+        "userId": "muhdiekuh",
+      }
+    }
+  />
+  <TweetListItem
+    tweet={
+      Object {
+        "date": "2018-09-23T12:25:41.801Z",
+        "id": 2,
+        "message": "Hello from the other side!",
+        "userId": "tobmaster",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`renders zero items according to snapshot 1`] = `<div />`;
