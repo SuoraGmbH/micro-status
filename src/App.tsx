@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Provider } from 'react-redux';
 import './App.css';
 import { TweetListFromRedux } from './component/TweetListFromRedux';
+import { TweetWritingFormForRedux } from './component/TweetWritingFormForRedux';
 import { configureStore } from './redux/configureStore';
 import { fetchTweets } from './redux/tweet/actions';
 
@@ -17,6 +18,7 @@ class App extends React.Component {
             <h1 className="App-title">📋 Micro Status 2.0</h1>
           </header>
           <div className="content">
+            <TweetWritingFormForRedux userId="muhdiekuh" />
             <TweetListFromRedux />
           </div>
         </div>

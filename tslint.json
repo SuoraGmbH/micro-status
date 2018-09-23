@@ -5,7 +5,9 @@
     "prettier": true,
     "interface-name": false,
     "object-literal-sort-keys": false,
-    "no-empty-interface": false
+    "no-empty-interface": false,
+    "no-console": false,
+    "no-shadowed-variable": false
   },
   "linterOptions": {
     "exclude": [

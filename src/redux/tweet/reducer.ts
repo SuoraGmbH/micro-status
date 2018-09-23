@@ -25,6 +25,13 @@ export const tweetReducer = (
         all,
         byId,
       };
+    case 'ADD_TWEET_FULFILLED':
+      const tweet = action.payload;
+      return {
+        ...state,
+        byId: { ...state.byId, [tweet.id]: tweet },
+        all: [...state.all, tweet.id],
+      };
   }
   return state;
 };

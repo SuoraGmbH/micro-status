@@ -1,21 +1,21 @@
 {
   "tweets": [
     {
-      "userId": "1",
+      "userId": "muhdiekuh",
       "message": "Hello World",
       "date": "2018-09-21T06:32:45+00:00",
       "id": 1
     },
     {
-      "userId": "1",
-      "message": "Hello World",
+      "userId": "muhdiekuh",
+      "message": "Hello another World",
       "date": "2018-09-21T06:35:23+00:00",
       "id": 2
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "muhdiekuh",
       "name": "Christian"
     }
   ]

@@ -1,5 +1,6 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import promiseMiddleware from 'redux-promise-middleware';
+import thunk from 'redux-thunk';
 import { tweetReducer } from './tweet/reducer';
 
 export const configureStore = () => {
@@ -9,7 +10,7 @@ export const configureStore = () => {
       tweets: tweetReducer,
     }),
     compose(
-      applyMiddleware(promiseMiddleware()),
+      applyMiddleware(thunk, promiseMiddleware()),
       win.__REDUX_DEVTOOLS_EXTENSION__ && win.__REDUX_DEVTOOLS_EXTENSION__(),
     ),
   );
