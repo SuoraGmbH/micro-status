@@ -21,9 +21,15 @@
     "eject": "react-scripts-ts eject",
     "lint": "tslint -p .",
     "lint:fix": "tslint -p . --fix",
-    "backend": "json-server --port 4712 --watch storage/database.json"
+    "backend": "json-server --port 4712 --watch storage/database.json",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addons": "^3.4.11",
+    "@storybook/react": "^4.0.0-alpha.3",
     "@types/enzyme": "^3.1.14",
     "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/jest": "^23.3.2",
@@ -33,6 +39,10 @@
     "@types/react-redux": "^6.0.9",
     "@types/react-test-renderer": "^16.0.2",
     "@types/redux-mock-store": "^1.0.0",
+    "@types/storybook__react": "^3.0.9",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "enzyme-to-json": "^3.3.4",
