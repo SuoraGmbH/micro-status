@@ -32,11 +32,8 @@ it('typing a value and submitting the form will result in a new tweet', () => {
   expect(tweet.userId).toBe('muhdiekuh');
   expect(tweet.message).toBe('Hello World!');
 
+  // clear mock, otherwise the snapshot would contain a date, which would break it.
+  addTweetCallback.mockClear();
   // Ensure value is empty again
-  expect(
-    wrapper
-      .find('input[name="text"]')
-      .getDOMNode()
-      .getAttribute('value'),
-  ).toEqual('');
+  expect(wrapper).toMatchSnapshot();
 });

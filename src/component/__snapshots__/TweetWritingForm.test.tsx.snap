@@ -16,6 +16,27 @@ exports[`renders correctly 1`] = `
 </form>
 `;
 
+exports[`typing a value and submitting the form will result in a new tweet 1`] = `
+<TweetWritingForm
+  addTweet={[MockFunction]}
+  userId="muhdiekuh"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      name="text"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <input
+      type="submit"
+    />
+  </form>
+</TweetWritingForm>
+`;
+
 exports[`typing a value and submitting the form will result in a new tweet: field filled 1`] = `
 <TweetWritingForm
   addTweet={[MockFunction]}
