@@ -1,4 +1,4 @@
-import { Tweet } from '../../../domain/Tweet';
+import { Tweet } from '../../domain/Tweet';
 import { ApplicationState, tweetState } from '../ApplicationState';
 
 export interface TweetState {

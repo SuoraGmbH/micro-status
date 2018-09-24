@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { TweetWithoutId } from '../../domain/Tweet';
+import { TweetWithoutId } from '../domain/Tweet';
 import { addTweet } from '../redux/tweet/actions';
 import { TweetWritingForm } from './TweetWritingForm';
 

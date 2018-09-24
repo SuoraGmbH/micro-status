@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { Tweet } from '../../domain/Tweet';
+import { Tweet } from '../domain/Tweet';
 import { ApplicationState } from '../redux/ApplicationState';
 import { getAllTweets } from '../redux/tweet/TweetState';
 import { TweetList } from './TweetList';

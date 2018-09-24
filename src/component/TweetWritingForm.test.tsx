@@ -1,7 +1,7 @@
 import { mount } from 'enzyme';
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
-import { TweetWithoutId } from '../../domain/Tweet';
+import { TweetWithoutId } from '../domain/Tweet';
 import { TweetWritingForm } from './TweetWritingForm';
 
 it('renders correctly', () => {

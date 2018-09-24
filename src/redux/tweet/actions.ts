@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import { Tweet, TweetWithoutId } from '../../../domain/Tweet';
+import { Tweet, TweetWithoutId } from '../../domain/Tweet';
 
 const FETCH_TWEETS = 'FETCH_TWEETS';
 const ADD_TWEET = 'ADD_TWEET';

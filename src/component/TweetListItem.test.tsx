@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as renderer from 'react-test-renderer';
-import { Tweet } from '../../domain/Tweet';
+import { Tweet } from '../domain/Tweet';
 import { TweetListItem } from './TweetListItem';
 
 const tweet: Tweet = {

@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
-import { Tweet } from '../../domain/Tweet';
+import { Tweet } from '../domain/Tweet';
 import { configureStore } from '../redux/configureStore';
 import { TweetListFromRedux } from './TweetListFromRedux';
 

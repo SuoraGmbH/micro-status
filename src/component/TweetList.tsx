@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Tweet } from '../../domain/Tweet';
+import { Tweet } from '../domain/Tweet';
 import { TweetListItem } from './TweetListItem';
 
 interface Props {

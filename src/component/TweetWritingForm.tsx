@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ChangeEvent, FormEvent } from 'react';
-import { TweetWithoutId } from '../../domain/Tweet';
+import { TweetWithoutId } from '../domain/Tweet';
 
 interface Props {
   userId: string;

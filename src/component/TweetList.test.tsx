@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ShallowRenderer from 'react-test-renderer/shallow';
-import { Tweet } from '../../domain/Tweet';
+import { Tweet } from '../domain/Tweet';
 import { TweetList } from './TweetList';
 
 const tweets: Tweet[] = [
