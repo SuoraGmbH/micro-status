@@ -16,39 +16,6 @@ exports[`renders correctly 1`] = `
 </form>
 `;
 
-exports[`typing a value and submitting the form will result in a new tweet: empty input 1`] = `
-<TweetWritingForm
-  addTweet={
-    [MockFunction] {
-      "calls": Array [
-        Array [
-          Object {
-            "date": "2018-09-24T06:07:04.596Z",
-            "message": "Hello World!",
-            "userId": "muhdiekuh",
-          },
-        ],
-      ],
-    }
-  }
-  userId="muhdiekuh"
->
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      name="text"
-      onChange={[Function]}
-      type="text"
-      value=""
-    />
-    <input
-      type="submit"
-    />
-  </form>
-</TweetWritingForm>
-`;
-
 exports[`typing a value and submitting the form will result in a new tweet: field filled 1`] = `
 <TweetWritingForm
   addTweet={[MockFunction]}

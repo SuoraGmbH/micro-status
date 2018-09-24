@@ -5,7 +5,7 @@ import { TweetWithoutId } from '../../domain/Tweet';
 import { TweetWritingForm } from './TweetWritingForm';
 
 it('renders correctly', () => {
-  const addTweet = () => {};
+  const addTweet = jest.fn();
   const tree = renderer
     .create(<TweetWritingForm userId="muhdiekuh" addTweet={addTweet} />)
     .toJSON();
@@ -33,5 +33,10 @@ it('typing a value and submitting the form will result in a new tweet', () => {
   expect(tweet.message).toBe('Hello World!');
 
   // Ensure value is empty again
-  expect(wrapper).toMatchSnapshot('empty input');
+  expect(
+    wrapper
+      .find('input[name="text"]')
+      .getDOMNode()
+      .getAttribute('value'),
+  ).toEqual('');
 });
