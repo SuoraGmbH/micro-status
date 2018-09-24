@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as renderer from 'react-test-renderer';
 import * as ShallowRenderer from 'react-test-renderer/shallow';
 import { Tweet } from '../../domain/Tweet';
 import { TweetList } from './TweetList';
