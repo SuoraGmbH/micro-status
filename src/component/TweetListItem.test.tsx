@@ -19,11 +19,6 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders with enzyme', () => {
-  const wrapper = render(<TweetListItem tweet={tweet} />);
-  expect(wrapper.find('h6').text()).toEqual('muhdiekuh');
-});
-
 it('renders and has a child', () => {
   const div = document.createElement('div');
   ReactDOM.render(<TweetListItem tweet={tweet} />, div);
@@ -34,6 +29,11 @@ it('renders and has a child', () => {
   expect(header.textContent).toEqual('muhdiekuh');
 
   ReactDOM.unmountComponentAtNode(div);
+});
+
+it('renders with enzyme', () => {
+  const wrapper = render(<TweetListItem tweet={tweet} />);
+  expect(wrapper.find('h6').text()).toEqual('muhdiekuh');
 });
 
 it('renders according to snapshot', () => {
