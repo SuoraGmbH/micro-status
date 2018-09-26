@@ -25,7 +25,7 @@ it('typing a value and submitting the form will result in a new tweet', () => {
   // Ensure value is in the field
   expect(wrapper).toMatchSnapshot('field filled');
 
-  wrapper.find('input[type="submit"]').simulate('submit');
+  wrapper.find('button[type="submit"]').simulate('submit');
 
   expect(addTweetCallback.mock.calls.length).toBe(1);
   const tweet: TweetWithoutId = addTweetCallback.mock.calls[0][0];

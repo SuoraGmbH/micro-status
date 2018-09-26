@@ -34,9 +34,13 @@ exports[`typing a value and submitting the form will result in a new tweet 1`] =
       type="text"
       value=""
     />
-    <input
+    <button
       type="submit"
-    />
+    >
+      <span>
+        Tweet
+      </span>
+    </button>
   </form>
 </TweetWritingForm>
 `;
