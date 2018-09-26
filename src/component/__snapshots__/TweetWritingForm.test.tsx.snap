@@ -10,9 +10,13 @@ exports[`renders correctly 1`] = `
     type="text"
     value=""
   />
-  <input
+  <button
     type="submit"
-  />
+  >
+    <span>
+      Tweet
+    </span>
+  </button>
 </form>
 `;
 
@@ -51,9 +55,13 @@ exports[`typing a value and submitting the form will result in a new tweet: fiel
       type="text"
       value="Hello World!"
     />
-    <input
+    <button
       type="submit"
-    />
+    >
+      <span>
+        Tweet
+      </span>
+    </button>
   </form>
 </TweetWritingForm>
 `;
