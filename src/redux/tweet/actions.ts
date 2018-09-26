@@ -21,14 +21,16 @@ export interface AddTweetFulfilledAction {
   payload: Tweet;
 }
 
-export const addTweet = (tweet: TweetWithoutId) => (dispatch: Dispatch) => ({
-  type: ADD_TWEET,
-  payload: fetch('http://localhost:4712/tweets', {
-    method: 'POST',
-    body: JSON.stringify(tweet),
-    headers: { 'Content-Type': 'application/json' },
-  }).then(response => {
-    // dispatch(fetchTweets());
-    return response.json();
-  }),
-});
+export const addTweet = (tweet: TweetWithoutId) => (dispatch: Dispatch) => {
+  dispatch({
+    type: ADD_TWEET,
+    payload: fetch('http://localhost:4712/tweets', {
+      method: 'POST',
+      body: JSON.stringify(tweet),
+      headers: { 'Content-Type': 'application/json' },
+    }).then(response => {
+      dispatch(fetchTweets());
+      return response.json();
+    }),
+  });
+};
