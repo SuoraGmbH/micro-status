@@ -11,7 +11,7 @@ export class TweetListItem extends React.Component<Props> {
     return (
       <li>
         <div className="avatar">
-          <img src="http://i.pravatar.cc/100" />
+          <img src={`http://i.pravatar.cc/100?u=${tweet.userId}`} />
         </div>
         <div className="tweet-wrapper">
           <div className="tweet">
