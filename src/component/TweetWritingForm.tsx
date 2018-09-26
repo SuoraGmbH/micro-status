@@ -27,7 +27,9 @@ export class TweetWritingForm extends React.Component<Props, State> {
           value={tweetText}
           onChange={this.handleInputChange}
         />
-        <input type="submit" />
+        <button type="submit">
+          <span>Tweet</span>
+        </button>
       </form>
     );
   }

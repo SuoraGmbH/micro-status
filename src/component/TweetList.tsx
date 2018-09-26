@@ -10,11 +10,11 @@ export class TweetList extends React.Component<Props> {
   public render() {
     const { tweets } = this.props;
     return (
-      <div>
+      <ul className="timeline">
         {tweets.map(tweet => (
           <TweetListItem key={tweet.id} tweet={tweet} />
         ))}
-      </div>
+      </ul>
     );
   }
 }
