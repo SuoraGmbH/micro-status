@@ -4,6 +4,8 @@ import * as renderer from 'react-test-renderer';
 import { Tweet } from '../domain/Tweet';
 import { TweetListItem } from './TweetListItem';
 
+import { render } from 'enzyme';
+
 const tweet: Tweet = {
   id: 1,
   date: '2018-09-23T12:25:41.801Z',
@@ -15,6 +17,11 @@ it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<TweetListItem tweet={tweet} />, div);
   ReactDOM.unmountComponentAtNode(div);
+});
+
+it('renders with enzyme', () => {
+  const wrapper = render(<TweetListItem tweet={tweet} />);
+  expect(wrapper.find('h6').text()).toEqual('muhdiekuh');
 });
 
 it('renders and has a child', () => {
