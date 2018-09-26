@@ -1,12 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders according to snapshot 1`] = `
-<div>
-  <h6>
-    muhdiekuh
-  </h6>
-  <p>
-    Hello World!
-  </p>
-</div>
+<li>
+  <div
+    className="avatar"
+  >
+    <img
+      src="http://i.pravatar.cc/100?u=muhdiekuh"
+    />
+  </div>
+  <div
+    className="tweet-wrapper"
+  >
+    <div
+      className="tweet"
+    >
+      <h6>
+        muhdiekuh
+      </h6>
+      <p>
+        Hello World!
+      </p>
+    </div>
+    <div
+      className="arrow"
+    />
+  </div>
+</li>
 `;

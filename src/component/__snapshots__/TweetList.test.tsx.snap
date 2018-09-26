@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders one item according to snapshot 1`] = `
-<div>
+<ul
+  className="timeline"
+>
   <TweetListItem
     tweet={
       Object {
@@ -12,11 +14,13 @@ exports[`renders one item according to snapshot 1`] = `
       }
     }
   />
-</div>
+</ul>
 `;
 
 exports[`renders two items according to snapshot 1`] = `
-<div>
+<ul
+  className="timeline"
+>
   <TweetListItem
     tweet={
       Object {
@@ -37,7 +41,11 @@ exports[`renders two items according to snapshot 1`] = `
       }
     }
   />
-</div>
+</ul>
 `;
 
-exports[`renders zero items according to snapshot 1`] = `<div />`;
+exports[`renders zero items according to snapshot 1`] = `
+<ul
+  className="timeline"
+/>
+`;
