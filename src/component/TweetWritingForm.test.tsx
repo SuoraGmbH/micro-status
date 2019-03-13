@@ -1,14 +1,12 @@
 import { mount } from 'enzyme';
 import * as React from 'react';
-import * as renderer from 'react-test-renderer';
 import { TweetWritingForm } from './TweetWritingForm';
 
 // This file contains test that use enzyme to test a component with a callback :O
 
 it('renders according to snapshot', () => {
-  const addTweet = jest.fn();
   const tree = mount(
-    <TweetWritingForm userId="muhdiekuh" addTweet={addTweet} />,
+    <TweetWritingForm userId="muhdiekuh" addTweet={() => {}} />,
   );
   expect(tree).toMatchSnapshot();
 });
