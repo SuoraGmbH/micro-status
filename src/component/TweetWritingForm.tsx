@@ -12,8 +12,8 @@ interface State {
 }
 
 export class TweetWritingForm extends React.Component<Props, State> {
-  constructor(props: Props, context: any) {
-    super(props, context);
+  constructor(props: Props) {
+    super(props);
     this.state = { tweetText: '' };
   }
 
