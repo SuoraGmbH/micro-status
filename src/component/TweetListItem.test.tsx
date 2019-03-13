@@ -4,6 +4,8 @@ import * as renderer from 'react-test-renderer';
 import { Tweet } from '../domain/Tweet';
 import { TweetListItem } from './TweetListItem';
 
+// This file contains some basic examples using react-test-renderer
+
 const tweet: Tweet = {
   id: 1,
   date: '2018-09-23T12:25:41.801Z',
@@ -14,7 +16,6 @@ const tweet: Tweet = {
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<TweetListItem tweet={tweet} />, div);
-  ReactDOM.unmountComponentAtNode(div);
 });
 
 it('renders and has a child', () => {
@@ -25,8 +26,12 @@ it('renders and has a child', () => {
 
   expect(header.nodeName).toEqual('H6');
   expect(header.textContent).toEqual('muhdiekuh');
+});
 
-  ReactDOM.unmountComponentAtNode(div);
+it('renders and somewhere has the authors name', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<TweetListItem tweet={tweet} />, div);
+  expect(div.innerHTML).toContain('muhdiekuh');
 });
 
 it('renders according to snapshot', () => {
