@@ -2,7 +2,7 @@
 
 exports[`renders according to snapshot 1`] = `
 <TweetWritingForm
-  addTweet={[MockFunction]}
+  addTweet={[Function]}
   userId="muhdiekuh"
 >
   <form
