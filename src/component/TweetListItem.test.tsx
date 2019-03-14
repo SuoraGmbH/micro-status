@@ -22,7 +22,7 @@ it('renders and has a child', () => {
   const div = document.createElement('div');
   ReactDOM.render(<TweetListItem tweet={tweet} />, div);
 
-  const header = div.childNodes[0].childNodes[1].childNodes[0].childNodes[0]
+  const header = div.childNodes[0].childNodes[1].childNodes[0].childNodes[0];
 
   expect(header.nodeName).toEqual('H6');
   expect(header.textContent).toEqual('muhdiekuh');
