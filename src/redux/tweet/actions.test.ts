@@ -2,6 +2,11 @@ import configureStore from 'redux-mock-store';
 import { middlewares } from '../configureStore';
 import { fetchTweets } from './actions';
 
+/**
+ * this file demonstrates how to mock a fetch request and how testing
+ * with redux middlewares works
+ */
+
 const mockStore = configureStore(middlewares);
 describe('tweets action creators', () => {
   beforeEach(() => {
