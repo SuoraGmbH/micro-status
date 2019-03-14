@@ -1,5 +1,5 @@
+import { shallow } from 'enzyme';
 import * as React from 'react';
-import * as ShallowRenderer from 'react-test-renderer/shallow';
 import { Tweet } from '../domain/Tweet';
 import { TweetList } from './TweetList';
 
@@ -19,19 +19,16 @@ const tweets: Tweet[] = [
 ];
 
 it('renders two items according to snapshot', () => {
-  const shallowRenderer = ShallowRenderer.createRenderer();
-  const tree = shallowRenderer.render(<TweetList tweets={tweets} />);
+  const tree = shallow(<TweetList tweets={tweets} />);
   expect(tree).toMatchSnapshot();
 });
 
 it('renders one item according to snapshot', () => {
-  const shallowRenderer = ShallowRenderer.createRenderer();
-  const tree = shallowRenderer.render(<TweetList tweets={[tweets[0]]} />);
+  const tree = shallow(<TweetList tweets={[tweets[0]]} />);
   expect(tree).toMatchSnapshot();
 });
 
 it('renders zero items according to snapshot', () => {
-  const shallowRenderer = ShallowRenderer.createRenderer();
-  const tree = shallowRenderer.render(<TweetList tweets={[]} />);
+  const tree = shallow(<TweetList tweets={[]} />);
   expect(tree).toMatchSnapshot();
 });

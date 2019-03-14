@@ -5,6 +5,7 @@ exports[`renders one item according to snapshot 1`] = `
   className="timeline"
 >
   <TweetListItem
+    key="1"
     tweet={
       Object {
         "date": "2018-09-22T12:25:41.801Z",
@@ -22,6 +23,7 @@ exports[`renders two items according to snapshot 1`] = `
   className="timeline"
 >
   <TweetListItem
+    key="1"
     tweet={
       Object {
         "date": "2018-09-22T12:25:41.801Z",
@@ -32,6 +34,7 @@ exports[`renders two items according to snapshot 1`] = `
     }
   />
   <TweetListItem
+    key="2"
     tweet={
       Object {
         "date": "2018-09-23T12:25:41.801Z",
