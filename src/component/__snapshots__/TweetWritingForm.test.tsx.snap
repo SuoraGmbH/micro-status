@@ -1,5 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`contains a text after the user typed 1`] = `
+<TweetWritingForm
+  addTweet={[Function]}
+  userId="muhdiekuh"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      name="text"
+      onChange={[Function]}
+      type="text"
+      value="Hello World!"
+    />
+    <button
+      type="submit"
+    >
+      <span>
+        Tweet
+      </span>
+    </button>
+  </form>
+</TweetWritingForm>
+`;
+
 exports[`renders according to snapshot 1`] = `
 <TweetWritingForm
   addTweet={[Function]}
@@ -38,31 +63,6 @@ exports[`typing a value and submitting the form will result in a new tweet 1`] =
       onChange={[Function]}
       type="text"
       value=""
-    />
-    <button
-      type="submit"
-    >
-      <span>
-        Tweet
-      </span>
-    </button>
-  </form>
-</TweetWritingForm>
-`;
-
-exports[`typing a value and submitting the form will result in a new tweet: field filled 1`] = `
-<TweetWritingForm
-  addTweet={[MockFunction]}
-  userId="muhdiekuh"
->
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      name="text"
-      onChange={[Function]}
-      type="text"
-      value="Hello World!"
     />
     <button
       type="submit"

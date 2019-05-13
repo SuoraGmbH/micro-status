@@ -2,7 +2,7 @@ import { shallow } from 'enzyme';
 import * as React from 'react';
 import { Tweet } from '../domain/Tweet';
 import { TweetList } from './TweetList';
-
+import * as renderer from 'react-test-renderer';
 const tweets: Tweet[] = [
   {
     id: 1,
@@ -30,5 +30,10 @@ it('renders one item according to snapshot', () => {
 
 it('renders zero items according to snapshot', () => {
   const tree = shallow(<TweetList tweets={[]} />);
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders multiple items according to snapshot', () => {
+  const tree = renderer.create(<TweetList tweets={tweets} />);
   expect(tree).toMatchSnapshot();
 });

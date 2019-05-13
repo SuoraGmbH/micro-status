@@ -1,5 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders multiple items according to snapshot 1`] = `
+<ul
+  className="timeline"
+>
+  <li>
+    <div
+      className="avatar"
+    >
+      <img
+        src="http://i.pravatar.cc/100?u=muhdiekuh"
+      />
+    </div>
+    <div
+      className="tweet-wrapper"
+    >
+      <div
+        className="tweet"
+      >
+        <h6>
+          muhdiekuh
+        </h6>
+        <p>
+          Hello World!
+        </p>
+      </div>
+      <div
+        className="arrow"
+      />
+    </div>
+  </li>
+  <li>
+    <div
+      className="avatar"
+    >
+      <img
+        src="http://i.pravatar.cc/100?u=tobmaster"
+      />
+    </div>
+    <div
+      className="tweet-wrapper"
+    >
+      <div
+        className="tweet"
+      >
+        <h6>
+          tobmaster
+        </h6>
+        <p>
+          Hello from the other side!
+        </p>
+      </div>
+      <div
+        className="arrow"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
 exports[`renders one item according to snapshot 1`] = `
 <ul
   className="timeline"
